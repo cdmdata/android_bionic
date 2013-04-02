@@ -928,7 +928,9 @@ struct v4l2_send_command_control {
 	int32_t		     id;
 	int32_t		     value0;
 	int32_t		     value1;
+	char	     	 debug[256];
 };
+
 /*  Values for ctrl_class field */
 #define V4L2_CTRL_CLASS_USER 0x00980000	/* Old-style 'user' controls */
 #define V4L2_CTRL_CLASS_MPEG 0x00990000	/* MPEG-compression controls */
